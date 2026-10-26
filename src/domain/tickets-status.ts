@@ -1,7 +1,5 @@
 import { TicketStatus , Ticket } from "./ticket";
 
-let ticket : TicketStatus = "in_progress";
-
 export function transformStatus(actually : TicketStatus ,next : TicketStatus ):TicketStatus {
     if(validateTrasformStatus(actually,next)){
         return actually = next;
@@ -20,5 +18,3 @@ export function validateTrasformStatus(actually:TicketStatus,next:TicketStatus):
     }
 }
 
-ticket = transformStatus(ticket,"resolved");
-console.log(ticket);
