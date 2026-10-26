@@ -1,1 +1,2 @@
-import { TicketStatus } from "./ticket";
+import { TicketStatus , Ticket } from "./ticket";
+
