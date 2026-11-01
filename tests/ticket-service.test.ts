@@ -12,3 +12,6 @@ const ticket1 :Ticket ={
     createdAt:new Date(),
     UpdatedAt:new Date('2026-11-14T09:30:00Z')
 };
+
+tickets.push(ticket1);
+console.log(tickets);
