@@ -125,4 +125,8 @@ tickets.push(ticket9);
 tickets.push(ticket10);
 tickets.push(ticket11);
 
-console.log(tickets);
+const prioridadeMaxima :Ticket[] = tickets.filter(ticket=>ticket.priority==="critical");
+console.log(prioridadeMaxima);
+
+const estadoAtual :Ticket[] = tickets.filter(ticket=>ticket.status==="in_progress");
+console.log(estadoAtual);
