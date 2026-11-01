@@ -132,3 +132,5 @@ const estadoAtual :Ticket[] = tickets.filter(ticket=>ticket.status==="in_progres
 const searchWithIdentity:Ticket|undefined = tickets.find(ticket=>ticket.id==="3");
 console.log(searchWithIdentity);
 
+const dataCreationOrdentate:Ticket[] = tickets.toSorted((a,b)=>a.createdAt.getDate-b.UpdatedAt.getDate);
+
