@@ -126,11 +126,16 @@ tickets.push(ticket10);
 tickets.push(ticket11);
 
 const prioridadeMaxima :Ticket[] = tickets.filter(ticket=>ticket.priority==="critical");
-
 const estadoAtual :Ticket[] = tickets.filter(ticket=>ticket.status==="in_progress");
-
 const searchWithIdentity:Ticket|undefined = tickets.find(ticket=>ticket.id==="3");
-console.log(searchWithIdentity);
-
 const dataCreationOrdentate:Ticket[] = tickets.toSorted((a,b)=>a.createdAt.getTime()-b.UpdatedAt.getTime());
+
+const ticketsOpen:number = tickets.filter(ticket=>ticket.status==="open").length;
+console.log(`number of tickets on open state : ${ticketsOpen}`);
+const ticketsin_progress:number = tickets.filter(ticket=>ticket.status==="in_progress").length;
+console.log(`number of tickets on in_progress state : ${ticketsin_progress}`);
+const ticketsResolved:number = tickets.filter(ticket=>ticket.status==="resolved").length;
+console.log(`number of tickets on resolved state : ${ticketsResolved}`);
+const ticketsClosed:number = tickets.filter(ticket=>ticket.status==="closed").length;
+console.log(`number of tickets on closed state : ${ticketsClosed}`);
 
