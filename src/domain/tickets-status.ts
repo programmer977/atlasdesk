@@ -1,4 +1,4 @@
-import { TicketStatus , Ticket } from "./ticket";
+import { TicketStatus} from "./ticket";
 
 export function transformStatus(actually : TicketStatus ,next : TicketStatus ):TicketStatus {
     if(validateTrasformStatus(actually,next)){
