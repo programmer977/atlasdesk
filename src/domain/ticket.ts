@@ -1,4 +1,5 @@
 import { transformStatus } from "./tickets-status";
+import {tickets} from "../infrastructure/memory-ticket-repository.js"
 
 export interface Ticket {
     id : string,
