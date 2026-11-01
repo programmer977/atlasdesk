@@ -130,3 +130,4 @@ console.log(prioridadeMaxima);
 
 const estadoAtual :Ticket[] = tickets.filter(ticket=>ticket.status==="in_progress");
 console.log(estadoAtual);
+
