@@ -12,3 +12,9 @@ const ticket1 :Ticket ={
     createdAt:new Date(),
     UpdatedAt:new Date('2026-11-14T09:30:00Z')
 };
+
+const ticketUpdated:Ticket={
+    ...ticket1,
+    status : ticket1.status = "in_progress",
+}
+console.log(ticketUpdated);
