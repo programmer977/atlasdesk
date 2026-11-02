@@ -20,7 +20,10 @@ const ticketUpdated:Ticket={
 }
 console.log(ticketUpdated);
 
-const tickestUpdated = tickets.map(ticket=>if{(ticket.id===1){
-    return ticket{...tickestUpdated}
-    return ticket};
-})
+const TicketsUpdtate:Ticket[]|undefined = tickets.map(ticket=>
+    {if(ticket.id==="1"){
+        return ticket={...ticketUpdated};
+    }
+    return ticket;    
+}
+)
