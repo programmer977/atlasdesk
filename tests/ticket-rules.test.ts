@@ -14,16 +14,9 @@ const ticket1 :Ticket ={
 };
 tickets.push(ticket1);
 
-const ticketUpdated:Ticket={
-    ...ticket1,
-    status : ticket1.status = "in_progress",
+const ticketUpdated = tickets.find(ticket=>ticket.id==="1");
+if(ticketUpdated){
+    ticketUpdated.status="in_progress",
+    ticketUpdated.UpdatedAt=new Date()
 }
-console.log(ticketUpdated);
-
-const TicketsUpdtate:Ticket[]|undefined = tickets.map(ticket=>
-    {if(ticket.id==="1"){
-        return ticket={...ticketUpdated};
-    }
-    return ticket;    
-}
-)
+console.log(tickets);
